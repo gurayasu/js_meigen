@@ -63,33 +63,9 @@ $("#btn").on("click", function(){
             view = 'だが断る…'
             name = '<a href="https://ja.wikipedia.org/wiki/%E5%B2%B8%E8%BE%BA%E9%9C%B2%E4%BC%B4" target="balnk" style="text-decoration:none;color:#b99b00">「ジョジョの奇妙な冒険」岸辺露伴</a>'
             $("#result__picture").attr('src', 'img/kishibe.jpeg');    
+            $(".result__wrapper").show();
+         $(".result__wrapper__img").show();
         }
-        $(".result__wrapper").show();
-        $(".result__wrapper__img").show();
-        // if (r === 2) {
-        //     view = '<a href="https://tabelog.com/tokyo/A1307/A130701/13017089/" target="balnk" style="text-decoration:none;color:#b99b00">チャイナルーム</a>'
-        //     $("#result__picture").attr('src', 'img/china__2.jpeg');
-        //     $("#map__wrapper").show();
-        //     $("#map").attr('src','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.687196615386!2d139.72613211464258!3d35.660077680199265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b76fbddfd29%3A0x8913153af9c520bf!2z5Lit5Zu95paZ55CGIOODgeODo-OCpOODiuODq-ODvOODoA!5e0!3m2!1sja!2sjp!4v1628911995072!5m2!1sja!2sjp');
-        // }
-        // if (r === 3) {
-        //     view = '<a href="https://tabelog.com/tokyo/A1313/A131301/13153417/" target="balnk" style="text-decoration:none;color:#b99b00">京チャイニーズ 一凛</a>'
-        //     $("#result__picture").attr('src', 'img/china__3.jpeg');
-        //     $("#map__wrapper").show();
-        //     $("#map").attr('src','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2901432412013!2d139.769349114643!3d35.669857180196914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be0754f21d1%3A0x27f1704b66c42e8f!2z5LiA5Yeb!5e0!3m2!1sja!2sjp!4v1628912071627!5m2!1sja!2sjp');
-        // }
-        // if (r === 4) {
-        //     view = '<a href="https://tabelog.com/tokyo/A1310/A131002/13026144/" target="balnk" style="text-decoration:none;color:#b99b00">川菜館（センサイカン）</a>'
-        //     $("#result__picture").attr('src', 'img/china__4.jpeg');
-        //     $("#map__wrapper").show();
-        //     $("#map").attr('src','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.2300139493977!2d139.76129261464385!3d35.6959569801908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c1a8e426e53%3A0xebb3a7cac081035a!2z5bed6I-c6aSo!5e0!3m2!1sja!2sjp!4v1628912140130!5m2!1sja!2sjp');
-        // }
-        // if (r === 5) {
-        //     view = '<a href="https://tabelog.com/tokyo/A1301/A130102/13025787/" target="balnk" style="text-decoration:none;color:#b99b00">交通飯店 （コウツウハンテン）</a>'
-        //     $("#result__picture").attr('src', 'img/china__5.jpeg');
-        //     $("#map__wrapper").show();
-        //     $("#map").attr('src','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0709489846026!2d139.7624831146431!3d35.6752549801957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be53d8f6d49%3A0x8bccf68ab6a5abab!2z5Lqk6YCa6aOv5bqX!5e0!3m2!1sja!2sjp!4v1628912208791!5m2!1sja!2sjp');
-        // }
     }　else if (type.value === "夢を叶えたい") {
         let r = Math.ceil(Math.random()*5);
         if (r === 1) {
@@ -122,24 +98,9 @@ $("#btn").on("click", function(){
     }　else if (type.value === "") {
         swal('気分を選択してください');
     }
-    // } else if (type.value === "") {
-    //     if (lan.value === "日本語") {
-    //         view = '<p id="result">れこめんどするお店</p>'
-    //     } else if (lan.value === "English") {
-    //         view = '<p id="result">Recommended Reutaurant</p>'
-    //     }
-    //     $("#result__picture").attr('src', 'img/logo.jpeg');
-    // }
-
-    // $(".result__wrapper").show();
-    // $(".result__wrapper__img").show();
 
     $("#result__mes").text(view);
     $("#result__who").html(name);
-
-    // $(".result__wrapper__who").addcss({
-    //     'text-decoration':'none'
-    // });
 
     $(".result__wrapper__who").css({
         'width':'100%',
