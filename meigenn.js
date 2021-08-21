@@ -59,7 +59,7 @@ $("#btn").on("click", function(){
         $(".result__wrapper__img").show();
     } else if (type.value === "笑いたい") {
         let r = Math.ceil(Math.random()*5);
-        if (r === 1) {
+        if (r === 1 || r === 2) {
             view = 'だが断る…'
             name = '<a href="https://ja.wikipedia.org/wiki/%E5%B2%B8%E8%BE%BA%E9%9C%B2%E4%BC%B4" target="balnk" style="text-decoration:none;color:#b99b00">「ジョジョの奇妙な冒険」岸辺露伴</a>'
             $("#result__picture").attr('src', 'img/kishibe.jpeg');    
