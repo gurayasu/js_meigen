@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="meigenn.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<header>
+
+        <div class="wrapper text__center design">
+        <h1 class="top__title">メイゲンガチャ</h1>
+        <h2 class="top__semititle">コトバがあなたを元気にする</h2>
+         </div>
+
+</header>
+
+<main>
+
+<div class="main__wrapper text__center logo">
+    <img src="./img/logo.jpeg" alt="">
+</div> 
+
+<div class="main__wrapper text__center">
+    <div class="select__wrapper">
+        <div class="select__wrapper__1 select__wrapper__2">
+            <select name ="type" id="type">
+            　  <option value="">今の気分は？</option>  
+                <option value="ちょっと落ち込んでいる">ちょっと落ち込んでいる</option>
+                <option value="夢を叶えたい">夢を叶えたい</option>
+                <option value="笑いたい">笑いたい</option>
+            </select>
+         </div>
+         <div class="btn__detail">
+            <button id="btn">メイゲンガチャを回す</button>
+        </div>
+    </div>
+
+    <div class="main__wrapper result__wrapper">
+        <div class="result__wrapper__text">
+            <p id="result__mes">？（MESSAGE）</p>
+        </div>
+        <div class="result__wrapper__who">
+            <p id="result__who">？（WHO）</p>
+        </div>
+    </div>
+        <div class="main__wrapper result__wrapper__img">
+            <img src="" alt="" id="result__picture">
+        </div>
+</div>
+
+
+</main>
+
+<footer>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<script src="meigenn.js"></script>
+</body>
+</html>
