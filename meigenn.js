@@ -64,6 +64,8 @@ $("#btn").on("click", function(){
             name = '<a href="https://ja.wikipedia.org/wiki/%E5%B2%B8%E8%BE%BA%E9%9C%B2%E4%BC%B4" target="balnk" style="text-decoration:none;color:#b99b00">「ジョジョの奇妙な冒険」岸辺露伴</a>'
             $("#result__picture").attr('src', 'img/kishibe.jpeg');   
             swal(`${today.getMonth()+1}月${today.getDate()}日のメイゲンが出ました`);   
+        } else {
+            swal('ネタ仕込み中です。'); 
         }
          $(".result__wrapper").show();
          $(".result__wrapper__img").show();
