@@ -62,14 +62,17 @@ $("#btn").on("click", function(){
         if (r === 1) {
             view = 'だが断る…'
             name = '<a href="https://ja.wikipedia.org/wiki/%E5%B2%B8%E8%BE%BA%E9%9C%B2%E4%BC%B4" target="balnk" style="text-decoration:none;color:#b99b00">「ジョジョの奇妙な冒険」岸辺露伴</a>'
-            $("#result__picture").attr('src', 'img/kishibe.jpeg');   
-            swal(`${today.getMonth()+1}月${today.getDate()}日のメイゲンが出ました`);   
-        } else {
-            swal('ネタ仕込み中です。'); 
+            $("#result__picture").attr('src', 'img/kishibe.jpeg');    
+            swal(`${today.getMonth()+1}月${today.getDate()}日のメイゲンが出ました`);    
+        }else{
+            view = 'ネタ仕込み中です。'
+            name = '<p style="text-decoration:none;color:#b99b00">ガチャくん</p>'
+            $("#result__picture").attr('src', 'img/nayami.png');    
+            swal(`笑えるネタ募集してます。`);
         }
-         $(".result__wrapper").show();
-         $(".result__wrapper__img").show();
-    }　else if (type.value === "夢を叶えたい") {
+        $(".result__wrapper").show();
+        $(".result__wrapper__img").show();
+     }　else if (type.value === "夢を叶えたい") {
         let r = Math.ceil(Math.random()*5);
         if (r === 1) {
             view = '立ち上がることは座っているのと同じくらい簡単なことだ'
@@ -104,6 +107,10 @@ $("#btn").on("click", function(){
 
     $("#result__mes").text(view);
     $("#result__who").html(name);
+
+    // $(".result__wrapper__who").addcss({
+    //     'text-decoration':'none'
+    // });
 
     $(".result__wrapper__who").css({
         'width':'100%',
